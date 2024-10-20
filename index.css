@@ -1,0 +1,91 @@
+#header{
+    background-color: grey;
+    margin:0px;
+    padding:5px;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+
+}
+#aboutpic img{
+    border:0px solid black;
+    padding:5px;
+    margin:5px;
+    width: 100%; /* Ensure image is responsive */
+    max-width: 100%; /* Limit max width */
+    height: auto;
+    border-radius: 3ow;
+    text-align: center;
+}
+.box{
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.service{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap:wrap;
+
+}
+.box:hover {
+    box-shadow: 2px 4px 20px rgba(99, 204, 13, 0.89);
+}
+#off{
+    text-align: center;
+    padding:10px;
+    margin:5px;
+}
+#deve{
+    text-align: center;
+    font-style: normal;
+    
+}
+.skills{
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-wrap:wrap;
+}
+.boxs{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.boxs:hover{
+    box-shadow: 2px 4px 20px rgba(228, 14, 132, 0.877);
+
+}
+.work{
+    text-align: center;
+    margin:10px;
+    padding:20px;
+}
+.deli{
+    text-align: center;
+    margin:10px;
+    padding:20px;
+
+}
+.con{
+    text-align: center;
+    margin:10px;
+    padding:20px;
+
+}
+.foot{
+    background-color:grey;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+}
+#amaz{
+    text-align: center;
+    background-color: grey;
+    
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my portfolio! I am a data scientist / data analysis showcasing my projects and skills. Explore my work and contact me for collaborations.">
+    <meta name="author" content="Kareem Ibraheem Olawale">
+
+    
+	<meta property="og:site_name" content="kareemportfolio.org.ng" /> <!-- website name -->
+	<meta property="og:site" content="Khoykareem.org.ng" /> <!-- website link -->
+	<meta property="og:title" content="Kareem: Data Scientist."/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Kareem is a skilled Data Scientist with expertise in Data analysis and Visualization and knowledge of Cloud based Machine learninng language , Natural Language Processing (NLP) also SQL " /> <!-- description shown in the actual shared post -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Water Analysis Degredation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md">
+            <h1 id="amaz">WATER QUALITY DEGREDATION</h1>
+            <p><strong>Objective:</strong></p>
+            <p>The objective of this project was to analyze water quality data across various Local Government Areas (LGAs), 
+                visualize the distribution of key water quality parameters, and build a predictive model to forecast water quality trends in specific LGAs.</p><br>
+                <h2>Water analysis for Lagos state</h2>
+                <p>Lagos state consists of twenty (20) local government areas and water quality analysis was done based on few parameters(pH, DO, BOD, conductivity, facial caliform count, and total coliform count) between 2013 - 2019</p>
+                <p>This analysis was done using WHO and Lagos State Ministry of Environmental and Water Resources guidlines.</p>
+            </div>
+            <div class="col-md">
+                <img src="images/Distibution.png">
+                <p><strong>Water quality remark distribution:</strong></p>
+                <ul>
+                   <li> A bar plot was created to show the distribution of water quality remarks (e.g., "Good Water", "Bad Water") across the entire dataset using Seaborn and Matplotlib.</li>
+                </ul><br>
+                
+                <img src="images/each lga quality.png">
+                <p><strong>Average Water Quality by LGA:</strong></p>
+                <ul>
+                    <li>I grouped the data by LGA and calculated the average values for critical parameters (pH, DO, BOD, conductivity, faecal coliform, and total coliform).</li>
+                    <li>Using subplots, bar plots for each water quality parameter were generated to visualize differences in average water quality across LGAs.</li>
+                </ul><br>
+                
+                <img src="images/Quality over years .png">
+                <p><strong>Temporal Analysis(Water Quality Trends Over Time):</strong></p>
+                <ul>
+                    <li>
+                        I focused on specific LGAs (Agege, Alimosho, Apapa, Ikeja, and Eti-Osa) 
+                        and analyzed how key water quality parameters evolved over the years.
+                    </li>
+                    <li>Line plots were generated to visualize water quality trends over time for each LGA, helping to identify seasonal and yearly variations.</li>
+                </ul><br>
+                <img src="images/seasonal variations.png">
+                <p><strong>Seasonal Variotions:</strong></p>
+                <ul>
+                    <li>I extracted the month from the 'DATE' column and grouped the data to analyze the seasonal variation of water quality.</li>
+                    <li> A stacked bar chart was used to display the proportion of "Good Water" and "Bad Water" remarks by month, highlighting potential seasonal impacts on water</li>
+                </ul><br>
+                
+
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h2>Predictive Model (Time Series Forecasting):</h2>
+                    <ol>
+                        <p><b>LGA FORECASTING:</b></p>
+                        <li>I used the SARIMA (Seasonal ARIMA) model to forecast the pH values for Ikeja LGA.</li>
+                        <li>The data was resampled to monthly frequency, and we split it into training and test sets. The SARIMA model was trained on the historical data until 2020, and predictions were made for 2021.</li>
+                    </ol>
+                    <p><b>RSULTS:</b></p>
+                    <ul>
+                        <li>The model's forecast was compared with the actual data on a plot, showing how well the SARIMA model could predict the pH levels for future dates based on past trends.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h3>CONCLUSION</h3>
+                   <p><b>The analysis revealed significant variability in water quality across different LGAs, with certain areas showing consistently good or bad water quality. The time series analysis further highlighted seasonal trends, with some parameters deteriorating during certain months of the year.\
+                     The predictive model applied to Ikeja LGA successfully forecasted future pH values, demonstrating the feasibility of using statistical models to predict water quality trends and assist in proactive water management.</b></p>
+                     <p><b>By visualizing water quality data and building a predictive model, this project offers valuable insights into water quality management at the LGA level.</b></p>
+                     <p><b>A forecast like this will help prevent disease outbreaks like cholera.
+                        Helping the government to be able to detect local government areas with bad water and help in educating people in those areas
+                        while tackling how to treat the water and reduce LGAs like Kosofe, Ikorodu, Eti-Osa have worst water quality distribution
+                     </b></p>
+
+
+                </div>
+
+            </div>
+
+    </div>
+
+</body>

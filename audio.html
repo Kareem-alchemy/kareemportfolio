@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my portfolio! I am a data scientist / data analysis showcasing my projects and skills. Explore my work and contact me for collaborations.">
+    <meta name="author" content="Kareem Ibraheem Olawale">
+
+    
+	<meta property="og:site_name" content="kareemportfolio.org.ng" /> <!-- website name -->
+	<meta property="og:site" content="Khoykareem.org.ng" /> <!-- website link -->
+	<meta property="og:title" content="Kareem: Data Scientist."/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Kareem is a skilled Data Scientist with expertise in Data analysis and Visualization and knowledge of Cloud based Machine learninng language , Natural Language Processing (NLP) also SQL " /> <!-- description shown in the actual shared post -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Audio ai chatbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1 id="amaz">Audio AI Chatbot for Customer Queries</h1><br>
+                <p><strong>Objective:</strong></p>
+                <p>The goal of this project was to build an AI chatbot capable of understanding user queries via audio input and providing accurate, spoken responses. 
+                    This chatbot leverages Natural Language Processing (NLP) 
+                    and speech recognition technologies to enhance user interaction, providing a seamless, conversational experience
+                     similar to virtual assistants like Google Assistant and Siri.
+                    </p><br>
+
+                    <h4><b>Process Overview:</b></h4>
+                    <ol>
+                        <li>
+                            Speech Recognition (Converting Audio to Text): 
+                                The first step involves capturing the user's voice and converting the spoken words into text. 
+                                For this, I integrated Google’s Speech-to-Text API. The key stages of this process include:
+                                <ul>
+                                <li>Audio Input Capture: The user speaks into a microphone, and the audio data is recorded.</li>
+                                <li>Audio Processing: The captured audio is converted into a machine-readable format.</li>
+                                <li>Speech Recognition: Using Google’s Speech-to-Text API, the processed audio is transcribed into text for further analysis.</li>
+                                </ul>
+                        </li>
+                    </ol><br>
+                    <h4><b>Challenges Tackled:</b></h4>
+                        <ul>
+                            <li>Ensuring the chatbot could handle varying accents and speech patterns.</li>
+                            <li>Preprocessing noisy audio data to improve transcription accuracy.</li>
+                        </ul><br>
+
+                        <h4><b>Natural Language Understanding:</b></h4> 
+                        <p>After converting speech to text, the next step was understanding the user’s query. 
+                            This required integrating Natural Language Processing (NLP) techniques, 
+                            leveraging the Google Knowledge Graph API for extracting meaningful insights. Key stages include:</p>
+                            <ul>
+                                <li><b>Intent Recognition:</b>The chatbot classifies the user’s intent by analyzing the text. Whether the user is asking for information, seeking a recommendation, or initiating a general conversation, the chatbot identifies the query type.</li>
+                                <li><b>Entity Extraction:</b>Relevant entities from the query (e.g., products, services, locations) are identified to provide context-aware responses.</li>
+                            </ul><br>
+
+                            <h4><b>technologies used:</b></h4>
+                            <p><b>Google Knowledge Graph API</b>: To fetch real-time information based on the recognized entities and intent.</p>
+                            <p><b>Generating Responses (Text-to-Speech Conversion):</b> Once the chatbot understands the user query, it generates a meaningful response. Instead of delivering responses solely as text, the chatbot speaks back to the user. This was achieved using Google’s Text-to-Speech API.</p><br>
+
+
+                            <p><b>Watch video below :</b></p>
+                            <video width="640" height="360" controls>
+                                <source src="images/OHGEE.mp4" type="video/mp4">
+                                
+                              </video>
+
+
+
+
+
+                    
+
+                    
+                    
+                    
+                    
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <p><b>Project Highlight:</b></p>
+                <ul>
+                    <li>Seamless integration of speech recognition and natural language processing.</li>
+                    <li>Real-time interaction with users, delivering responses via audio.</li>
+                    <li>A robust system to handle a wide range of queries, improving the overall user experience.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
