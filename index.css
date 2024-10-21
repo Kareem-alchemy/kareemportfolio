@@ -89,3 +89,9 @@
     background-color: grey;
     
 }
+input::placeholder {
+  color: grey;
+  font-style: italic;
+}
+
+
