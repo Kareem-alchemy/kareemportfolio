@@ -1,19 +1,23 @@
-# 📊 WhatsApp Report Generator Bot
+# FAQ Chatbot (TF-IDF + Flask)
 
-This project automatically generates and sends business reports through WhatsApp using Python and Flask.  
-It combines data analysis, automation, and message integration to help businesses receive real-time insights.
+This project is an AI-powered FAQ chatbot that answers customer questions using **TF-IDF** and COSINE SIMILARITIES.  
+It can run locally in Jupyter or integrate with Twilio WhatsApp via a Flask API.
 
- Features
-- Generates daily/weekly/monthly reports automatically  
-- Integrates with WhatsApp API for direct delivery  
-- Supports PDF and text summaries  
-- Built with Flask and Twilio API  
-- Easily customizable for different data sources  
+## Features
+- Trains a chatbot from your FAQ CSV (`newfaq.csv`)
+- Responds to similar questions using cosine similarity
+- Redirects unclear queries to a human provider
+- Flask webhook endpoint ready for Twilio WhatsApp
 
-## Tech Stack
-- Python (Pandas, Flask)
-- Twilio WhatsApp API
-- Matplotlib (for charts)
-- ReportLab (for PDFs)
+## Technologies
+- Python
+- Flask
+- Scikit-learn
+- Twilio API
+- Jupyter Notebook
 
-
+#Setup Instructions
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/<your-username>/faq_chatbot.git
+   cd faq_chatbot
